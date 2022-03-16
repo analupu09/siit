@@ -6,14 +6,13 @@ print(numbers_list)
 numbers_list.sort(reverse=True)
 print(numbers_list)
 
-even_number_list = numbers_list[::2]
-even_number_list.sort()
+numbers_list.sort()
+even_number_list = numbers_list[1::2]
 print(even_number_list)
 
-uneven_number_list = numbers_list[1::2]
-uneven_number_list.sort()
+uneven_number_list = numbers_list[0::2]
 print(uneven_number_list)
 
-multiple_3numbers = numbers_list[1::3]
-multiple_3numbers.sort()
+multiple_3numbers = numbers_list[2::3]
 print(multiple_3numbers)
+
