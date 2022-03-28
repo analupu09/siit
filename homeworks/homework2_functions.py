@@ -36,5 +36,27 @@
 #     return n + total_numbers(n - 2)
 #
 #
-# print(total_numbers(8))
+# print(total_numbers(7))
 
+
+# def total_numbers(n):
+#     if n <= 0:
+#         return 0
+#
+#     return n + total_numbers(n - 2)
+#
+#
+# print(total_numbers(7))
+
+
+# def function_user_input(user_input):
+#     try:
+#         if int(user_input):
+#             print(f'You wrote the following number: {user_input}')
+#     except ValueError:
+#         print("0")
+#
+#
+#
+# user_input = input('Write a number or a word: ')
+# function_user_input(user_input)
