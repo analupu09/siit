@@ -23,7 +23,7 @@ cars = [
         'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
         'brand': 'Opel',
         'model': 'Astra',
-        'horse_power': 62,
+        'horse_power': 75,
         'price': 1254
     },
     {
@@ -37,14 +37,14 @@ cars = [
         'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
         'brand': 'Skoda',
         'model': 'Octavia',
-        'horse_power': 95,
+        'horse_power': 165,
         'price': 4595
     },
     {
         'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
         'brand': 'Ford',
         'model': 'Puma',
-        'horse_power': 110,
+        'horse_power': 145,
         'price': 2876
     },
     {
@@ -90,7 +90,7 @@ for car in cars:
 
 horse_power_list = list(filter(lambda item: item['horse_power'] < 120, cars))
 print('slow_cars', horse_power_list)
-horse_power_list = list(filter(lambda item: item['horse_power'] >= 120 < 180, cars))
+horse_power_list = list(filter(lambda item: 120 <= item['horse_power'] < 180, cars))
 print('fast_cars', horse_power_list)
 horse_power_list = list(filter(lambda item: item['horse_power'] > 180, cars))
 print('sport_cars', horse_power_list)
@@ -114,7 +114,7 @@ for car in cars:
 
 car_price_list = list(filter(lambda item: item['price'] < 1000, cars))
 print('cheap: ', car_price_list)
-car_price_list = list(filter(lambda item: item['price'] >= 1000 < 5000, cars))
+car_price_list = list(filter(lambda item: 1000 >= item['price']  < 5000, cars))
 print('medium: ', car_price_list)
 car_price_list = list(filter(lambda item: item['price'] >= 5000, cars))
 print('expensive: ', car_price_list)

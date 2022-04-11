@@ -1,4 +1,58 @@
-This is just an example of what python can read from this file.
-This was a hard homework and some of the steps are unclear.
-Help is needed from the teacher.
-Thank you in advance.
+cars = [
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Volkswagen',
+        'model': 'Arteon',
+        'horse_power': 190,
+        'price': 9876
+    },
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Opel',
+        'model': 'Astra',
+        'horse_power': 75,
+        'price': 1254
+    },
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Volkswagen',
+        'model': 'Golf',
+        'horse_power': 210,
+        'price': 7565
+    },
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Skoda',
+        'model': 'Octavia',
+        'horse_power': 95,
+        'price': 4595
+    },
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Ford',
+        'model': 'Puma',
+        'horse_power': 145,
+        'price': 2876
+    },
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Skoda',
+        'model': 'Fabia',
+        'horse_power': 95,
+        'price': 989
+    },
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Ford',
+        'model': 'Mustang',
+        'horse_power': 120,
+        'price': 4.500
+    },
+    {
+        'id': ''.join(random.choices(string.ascii_uppercase + string.digits, k=s)),
+        'brand': 'Opel',
+        'model': 'Corsa',
+        'horse_power': 55,
+        'price': 750
+    }
+]
