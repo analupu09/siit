@@ -5,8 +5,6 @@
 # __sub__ : returnam o noua fractie care reprezinta scaderea
 # inverse: returneaza o noua fractie (inversa fractiei)
 
-from fractions import *
-
 
 class Fractie:
 
