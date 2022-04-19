@@ -19,8 +19,8 @@ def euclid_algorithm(numerator, denominator):
 class Fraction:
 
     @staticmethod
-    def inverse(numerator, denominator):
-        return Fraction(denominator, numerator)
+    def inverse(self):
+        return Fraction(self.den, self.num)
 
     def __init__(self, numerator, denominator):
         self.num = numerator
@@ -55,5 +55,7 @@ forth_fraction = Fraction(1, 7)
 deduction_fractions = third_fraction - forth_fraction
 print('Result of deducting fraction:', deduction_fractions)
 
-print('Inverse fraction: ', Fraction.inverse(7, 9))
+seventh_fraction = Fraction(7,9)
+reversed_fraction = Fraction.inverse(seventh_fraction)
+print('Result of the reversed 7/9 fraction is: ', reversed_fraction)
 
