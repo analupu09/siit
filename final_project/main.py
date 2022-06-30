@@ -51,3 +51,7 @@ if __name__ == '__main__':
     accept_cookies = WebDriverWait(driver, 20).until(
         EC.element_to_be_clickable(
             (By.XPATH, '/html/body/div[4]/div/div[3]/div/div/div[2]/div/div/div[1]/button/div[1]/div'))).click()
+
+    time.sleep(4)
+
+    driver.close()
