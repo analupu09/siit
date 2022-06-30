@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 if __name__ == '__main__':
-    driver = webdriver.Chrome('./chromedriver')
+    driver = webdriver.Chrome()
     # first website
     driver.get('https://www.opodo.com/')
 
@@ -42,6 +42,10 @@ if __name__ == '__main__':
     driver.find_element(By.XPATH, '//*[@id="react-app"]/div/div/div[1]/div/div[2]/div[1]/div[3]/div[2]/button').click()
 
     # second website
+    driver.execute_script('window.open()')
+    window_after = driver.window_handles[1]
+    driver.switch_to.window(window_after)
+    time.sleep(3)
     driver.get('https://www.cheapflights.co.uk/')
 
     accept_cookies = WebDriverWait(driver, 20).until(
