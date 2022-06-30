@@ -4,14 +4,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 import time
+from threading import Thread
 
-if __name__ == '__main__':
-    driver = webdriver.Chrome()
-    # first website
+
+def first_website():
     driver.get('https://www.opodo.com/')
-
-    agree_button = WebDriverWait(driver, 20).until(
-        EC.element_to_be_clickable((By.XPATH, '//*[@id="didomi-notice-agree-button"]')))
+    wait = WebDriverWait(driver, 20)
+    agree_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="didomi-notice-agree-button"]')))
     agree_button.click()
 
     departure = driver.find_element(By.XPATH,
@@ -24,34 +23,42 @@ if __name__ == '__main__':
     arrival.send_keys('Tokyo', Keys.ENTER)
     time.sleep(2)
 
-    # departure details
+    # departure date details
     driver.find_element(By.XPATH,
                         '//*[@id="react-app"]/div/div/div[1]/div/div[2]/div[1]/div[2]/div/div/div[3]/div/div[1]/input').click()
     driver.find_element(By.XPATH,
                         '//*[@id="react-app"]/div/div/div[1]/div/div[2]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[5]/div[3]').click()
 
-    # return details
+    # return date details
     driver.find_element(By.XPATH,
                         '//*[@id="react-app"]/div/div/div[1]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div[1]/input').click()
     driver.find_element(By.XPATH,
                         '//*[@id="react-app"]/div/div/div[1]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div[2]/div/div[1]/div/div[3]/div/div[2]/div[6]/div[2]').click()
 
-    # search flights
+    # search flights button
     driver.find_element(By.XPATH,
                         '//*[@id="react-app"]/div/div/div[1]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div[2]/div/div[2]/div[2]/div/div[3]/div/div/div/button').click()
     driver.find_element(By.XPATH, '//*[@id="react-app"]/div/div/div[1]/div/div[2]/div[1]/div[3]/div[2]/button').click()
 
-    # second website
+
+def second_website():
     driver.execute_script('window.open()')
     window_after = driver.window_handles[1]
     driver.switch_to.window(window_after)
     time.sleep(3)
     driver.get('https://www.cheapflights.co.uk/')
 
-    accept_cookies = WebDriverWait(driver, 20).until(
+    WebDriverWait(driver, 20).until(
         EC.element_to_be_clickable(
             (By.XPATH, '/html/body/div[4]/div/div[3]/div/div/div[2]/div/div/div[1]/button/div[1]/div'))).click()
 
-    time.sleep(4)
+    time.sleep(5)
 
-    driver.close()
+
+if __name__ == '__main__':
+    driver = webdriver.Chrome()
+    Thread(target=first_website).start()
+    time.sleep(70)
+    Thread(target=second_website).start()
+    time.sleep(30)
+    driver.quit()
