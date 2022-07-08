@@ -26,8 +26,6 @@ if __name__ == '__main__':
             first = False
             flight_details1 = wait.until(EC.visibility_of_all_elements_located((By.XPATH,
                                                                                 '//*[contains(@class, "money-integer css-1umyyay-BaseText-MoneyPart-DefaultPart e16uabde1")]')))
-            driver.execute_script('window.scrollTo(0,50)')
-            time.sleep(10)
             for opodo_prices in flight_details1:
                 data.append({
                     'flight_price_opodo': opodo_prices.text
@@ -40,7 +38,7 @@ if __name__ == '__main__':
             accept_button = wait.until(EC.element_to_be_clickable(
                 (By.XPATH, '//*[@id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"]')))
             accept_button.click()
-            flight_details2 = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//*[@id="mainView"]/div/div/div[2]/ith-flight-offers/div/div[1]/div/div/ith-flight-offer/div/div/div[2]/ith-flight-offer-actions/div/div/strong')))
+            flight_details2 = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//div[@class="flight-fade"]//div[@class="pricing"]/strong[@class="price"]/span')))
             for vola_prices in flight_details2:
                 data.append({
                     'flight_prices_vola': vola_prices.text
