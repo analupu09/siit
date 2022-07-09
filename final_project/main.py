@@ -38,11 +38,31 @@ if __name__ == '__main__':
             accept_button = wait.until(EC.element_to_be_clickable(
                 (By.XPATH, '//*[@id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"]')))
             accept_button.click()
-            flight_details2 = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//div[@class="flight-fade"]//div[@class="pricing"]/strong[@class="price"]/span')))
-            for vola_prices in flight_details2:
+
+            flight_details_vola = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//div[@class="flight-fade"]//div[@class="pricing"]/strong[@class="price"]/span')))
+            for vola_prices in flight_details_vola:
                 data.append({
-                    'flight_prices_vola': vola_prices.text
+                    'vola_flight_prices': vola_prices.text
                 })
+            time.sleep(10)
+            flight_departure_vola = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//div[@class="checkpoint__primary"]//div[@class="checkpoint__hour"]//span[@ng-bind="::$ctrl.stage.departureHour"]')))
+            for vola_departure in flight_departure_vola:
+                data.append({
+                    'vola_flight_departure_time': vola_departure.text
+                })
+            time.sleep(10)
+            flight_return_vola = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//div[@class="flight-fade"]//div[@class="checkpoint__primary"]/div[@class="checkpoint__hour"]/span[@ng-bind="::$ctrl.stage.departureHour"]')))
+            for vola_return in flight_return_vola:
+                data.append({
+                    'vola_flight_return_time': vola_return.text
+                })
+            time.sleep(10)
+            return_duration_vola = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//div[@class="info"]//div[@class="stops"]/span[@ng-bind="::$ctrl.stage.durationFormatted"]')))
+            for vola_return_duration in return_duration_vola:
+                data.append({
+                    'vola_return_duration': vola_return_duration
+                })
+            time.sleep(10)
 
     driver.quit()
 
