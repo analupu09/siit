@@ -10,13 +10,12 @@ def opodo_website():
     data = []
     url = f'https://www.opodo.com/travel/#results/type=R;from=BUH;to=TYO;dep=2022-08-12;ret=2022-08-26;buyPath=FLIGHTS_HOME_SEARCH_FORM;internalSearch=true'
     driver = webdriver.Chrome()
+    driver.set_window_size(960, 900)
+    driver.set_window_position(0, 0)
     driver.get(url)
     wait = WebDriverWait(driver, 30)
     original_window = driver.current_window_handle
 
-    driver.set_window_size(960, 900)
-    driver.set_window_position(0, 0)
-    driver.get(url)
     agree_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="didomi-notice-agree-button"]')))
     agree_button.click()
 
@@ -29,7 +28,7 @@ def opodo_website():
 
     driver.quit()
 
-    with open('output_opodo.json', 'w') as json_file:
+    with open('opodo_results.json', 'w') as json_file:
         json.dump(data, json_file, indent=2)
 
 opodo_website()

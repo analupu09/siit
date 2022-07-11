@@ -26,24 +26,29 @@ def vola_website():
     time.sleep(10)
     tickets_vola = driver.find_elements(By.XPATH, '//*[contains(@class, "flight-fade")]')
     for index, ticket_vola in enumerate(tickets_vola):
-        departure_vola = ticket_vola.find_element(By.XPATH,
-                                                  '//div[@class="checkpoint__primary"]//div[@class="checkpoint__hour"]//span[@ng-bind="::$ctrl.stage.departureHour"]').text
-
-        return_vola = ticket_vola.find_element(By.XPATH,
-                                               '//div[@class="flight-fade"]//div[@class="checkpoint__primary"]/div[@class="checkpoint__hour"]/span[@ng-bind="::$ctrl.stage.arrivalHour"]').text
-
-        flight_price_vola = ticket_vola.find_element(By.XPATH,
-                                                     '//div[@class="flight-fade"]//div[@class="pricing"]/strong[@class="price"]/span').text
+        departure_vola = ticket_vola.find_elements(By.XPATH,
+                                                  '//*[@id="mainView"]/div/div/div[2]/ith-flight-offers/div/div[..]/div/div/ith-flight-offer/div/div/div[1]/ith-flight-stage[1]/div/div[2]/div/div[1]/div[1]/div[1]/span')
+        print(departure_vola)
+        arrival_vola = ticket_vola.find_elements(By.XPATH,
+                                               '//*[@id="mainView"]/div/div/div[2]/ith-flight-offers/div/div[..]/div/div/ith-flight-offer/div/div/div[1]/ith-flight-stage[2]/div/div[2]/div/div[1]/div[1]/div[1]/span')
+        departure_arrival_time = ticket_vola.find_elements(By.XPATH,
+                                                           '//*[@id="mainView"]/div/div/div[2]/ith-flight-offers/div/div[..]/div/div/ith-flight-offer/div/div/div[1]/ith-flight-stage[1]/div/div[2]/div/div[3]/div[1]/div[1]/span')
+        arrival_departure_time = ticket_vola.find_elements(By.XPATH,
+                                                           '//*[@id="mainView"]/div/div/div[2]/ith-flight-offers/div/div[..]/div/div/ith-flight-offer/div/div/div[1]/ith-flight-stage[2]/div/div[2]/div/div[3]/div[1]/div[1]/span')
+        flight_price_vola = ticket_vola.find_elements(By.XPATH,
+                                                     '//*[@id="mainView"]/div/div/div[2]/ith-flight-offers/div/div[..]/div/div/ith-flight-offer/div/div/div[2]/ith-flight-offer-actions/div/div/strong/span')
 
         data.append({
             'vola_flight_departure_time': departure_vola,
-            'vola_flight_return_time': return_vola,
+            'vola_arrival_time': departure_arrival_time,
+            'vola_flight_arrival': arrival_vola,
+            'vola_arrival_departure_time': arrival_departure_time,
             'vola_flight_prices': flight_price_vola
         })
 
     driver.quit()
 
-    with open('output_vola.json', 'w') as json_file:
+    with open('vola_results.json', 'w') as json_file:
         json.dump(data, json_file, indent=2)
 
 vola_website()
