@@ -1,10 +1,8 @@
 import json
 
-import wait as wait
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
 
 
@@ -18,27 +16,29 @@ def kayak_website():
     wait = WebDriverWait(driver, 30)
     original_window = driver.current_window_handle
 
-    accept_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="apCq"]/div[13]/div/div[3]/div/div/div[1]')))
-    accept_button.click()
-
+    time.sleep(10)
+    driver.find_element(By.XPATH, '//button/div[1]/div[text()="Accept"]').find_element(By.XPATH, '../..').click()
+    time.sleep(10)
 
     tickets_kayak = driver.find_elements(By.XPATH, '//div[@class="resultWrapper"]')
     for index, ticket_kayak in enumerate(tickets_kayak):
-        departure_kayak = ticket_kayak.find_element(By.XPATH, '//li[@class="flight with-gutter"]//div[@class="section times"]//div[@class="top"]//span[@class="depart-time base-time"]').text
-        return_kayak = ticket_kayak.find_element(By.XPATH, '//li[@class="flight "]//div[@class="section times"]//div[@class="top"]//span[@class="depart-time base-time"]').text
-        price_kayak = ticket_kayak.find_element(By.XPATH, '//span[@class="price option-text"]').text
+        departure_time = ticket_kayak.find_element(By.XPATH, './/div[contains(@class, "Flights-Results-ResultInfo multiple-legs")]/ol/li[1]/div/div/div[contains(@class, "times")]/div/span[contains(@class, "time-pair")]/span[contains(@class, "depart-time")]').text
+        departure_arrival_time = ticket_kayak.find_element(By.XPATH, './/div[contains(@class, "Flights-Results-ResultInfo multiple-legs")]/ol/li[1]/div/div/div[contains(@class, "times")]/div/span[contains(@class, "time-pair")]/span[contains(@class, "arrival-time")]').text
+        return_time = ticket_kayak.find_element(By.XPATH, './/div[contains(@class, "Flights-Results-ResultInfo multiple-legs")]/ol/li[2]/div/div/div[contains(@class, "times")]/div/span[contains(@class, "time-pair")]/span[contains(@class, "depart-time")]').text
+        return_arrival_time = ticket_kayak.find_element(By.XPATH, './/div[contains(@class, "Flights-Results-ResultInfo multiple-legs")]/ol/li[2]/div/div/div[contains(@class, "times")]/div/span[contains(@class, "time-pair")]/span[contains(@class, "arrival-time")]').text
+        flight_price = ticket_kayak.find_element(By.XPATH, './/span[@class="price-text"]').text
 
-        time.sleep(10)
         data.append({
-            'kayak_departure_time': departure_kayak,
-            'kayak_return_time': return_kayak,
-            'kayak_prices': price_kayak
+            'kayak_departure_time': departure_time,
+            'kayak_departure_arrival_time': departure_arrival_time,
+            'kayak_return_time': return_time,
+            'kayak_return_arrival_time': return_arrival_time,
+            'kayak_prices': flight_price
         })
-    time.sleep(10)
+
     driver.quit()
 
     with open('kayak_results.json', 'w') as json_file:
         json.dump(data, json_file, indent=2)
 
 kayak_website()
-

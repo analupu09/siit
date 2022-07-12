@@ -1,57 +1,114 @@
 [
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "22:00",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "08:15",
+    "kayak_prices": "\u20ac1,643"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "16:10",
+    "kayak_departure_arrival_time": "08:55",
+    "kayak_return_time": "11:00",
+    "kayak_return_arrival_time": "15:30",
+    "kayak_prices": "\u20ac1,595"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "22:00",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "11:55",
+    "kayak_prices": "\u20ac1,628"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "15:50",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "11:55",
+    "kayak_prices": "\u20ac1,628"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "15:50",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "08:15",
+    "kayak_prices": "\u20ac1,643"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "22:00",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "11:55",
+    "kayak_prices": "\u20ac1,670"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "22:00",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "14:30",
+    "kayak_prices": "\u20ac1,713"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "09:35",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "08:15",
+    "kayak_prices": "\u20ac1,643"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "15:50",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "11:55",
+    "kayak_prices": "\u20ac1,671"
   },
   {
-    "kayak_departure_time": "13:10",
-    "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_departure_time": "20:40",
+    "kayak_departure_arrival_time": "08:55",
+    "kayak_return_time": "12:10",
+    "kayak_return_arrival_time": "00:05",
+    "kayak_prices": "\u20ac1,675"
   },
   {
-    "kayak_departure_time": "13:10",
+    "kayak_departure_time": "15:50",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "14:30",
+    "kayak_prices": "\u20ac1,713"
+  },
+  {
+    "kayak_departure_time": "08:35",
+    "kayak_departure_arrival_time": "19:20",
+    "kayak_return_time": "22:05",
+    "kayak_return_arrival_time": "08:15",
+    "kayak_prices": "\u20ac1,743"
+  },
+  {
+    "kayak_departure_time": "14:50",
+    "kayak_departure_arrival_time": "17:25",
     "kayak_return_time": "09:15",
-    "kayak_prices": "\u20ac2,215"
+    "kayak_return_arrival_time": "22:50",
+    "kayak_prices": "\u20ac1,931"
+  },
+  {
+    "kayak_departure_time": "14:25",
+    "kayak_departure_arrival_time": "15:45",
+    "kayak_return_time": "09:15",
+    "kayak_return_arrival_time": "22:50",
+    "kayak_prices": "\u20ac1,991"
+  },
+  {
+    "kayak_departure_time": "06:10",
+    "kayak_departure_arrival_time": "08:20",
+    "kayak_return_time": "12:10",
+    "kayak_return_arrival_time": "00:05",
+    "kayak_prices": "\u20ac2,023"
+  },
+  {
+    "kayak_departure_time": "14:50",
+    "kayak_departure_arrival_time": "17:25",
+    "kayak_return_time": "09:15",
+    "kayak_return_arrival_time": "22:50",
+    "kayak_prices": "\u20ac2,034"
   }
 ]
