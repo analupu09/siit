@@ -44,10 +44,9 @@ def vola_website():
             'vola_arrival_departure_time': arrival_departure_time,
             'vola_flight_prices': flight_price
         })
+        data.sort(key=lambda x: x["vola_flight_prices"])
 
     driver.quit()
 
     with open('vola_results.json', 'w') as json_file:
         json.dump(data, json_file, indent=2)
-
-vola_website()

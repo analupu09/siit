@@ -1,73 +1,66 @@
 [
   {
-    "vola_flight_departure_time": "22:00",
+    "vola_flight_departure_time": "09:35",
     "vola_arrival_time": "19:20",
     "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "08:15",
-    "vola_flight_prices": "1809 \u20ac"
+    "vola_arrival_departure_time": "11:55",
+    "vola_flight_prices": "1668 \u20ac"
   },
   {
     "vola_flight_departure_time": "22:00",
     "vola_arrival_time": "19:20",
     "vola_flight_arrival": "22:05",
     "vola_arrival_departure_time": "11:55",
-    "vola_flight_prices": "1747 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "15:50",
-    "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "08:15",
-    "vola_flight_prices": "1809 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "22:00",
-    "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "14:30",
-    "vola_flight_prices": "1881 \u20ac"
+    "vola_flight_prices": "1693 \u20ac"
   },
   {
     "vola_flight_departure_time": "15:50",
     "vola_arrival_time": "19:20",
     "vola_flight_arrival": "22:05",
     "vola_arrival_departure_time": "11:55",
-    "vola_flight_prices": "1747 \u20ac"
+    "vola_flight_prices": "1693 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "22:00",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:05",
+    "vola_arrival_departure_time": "08:15",
+    "vola_flight_prices": "1708 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "15:50",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:05",
+    "vola_arrival_departure_time": "08:15",
+    "vola_flight_prices": "1708 \u20ac"
   },
   {
     "vola_flight_departure_time": "09:35",
     "vola_arrival_time": "19:20",
     "vola_flight_arrival": "22:05",
     "vola_arrival_departure_time": "08:15",
-    "vola_flight_prices": "1762 \u20ac"
+    "vola_flight_prices": "1708 \u20ac"
   },
   {
-    "vola_flight_departure_time": "08:35",
+    "vola_flight_departure_time": "22:00",
     "vola_arrival_time": "19:20",
     "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "08:15",
-    "vola_flight_prices": "1836 \u20ac"
+    "vola_arrival_departure_time": "14:30",
+    "vola_flight_prices": "1776 \u20ac"
   },
   {
     "vola_flight_departure_time": "15:50",
     "vola_arrival_time": "19:20",
     "vola_flight_arrival": "22:05",
     "vola_arrival_departure_time": "14:30",
-    "vola_flight_prices": "1881 \u20ac"
+    "vola_flight_prices": "1776 \u20ac"
   },
   {
     "vola_flight_departure_time": "09:35",
     "vola_arrival_time": "19:20",
     "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "11:55",
-    "vola_flight_prices": "1742 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "14:50",
-    "vola_arrival_time": "17:25",
-    "vola_flight_arrival": "09:15",
-    "vola_arrival_departure_time": "22:50",
-    "vola_flight_prices": "2118 \u20ac"
+    "vola_arrival_departure_time": "14:30",
+    "vola_flight_prices": "1776 \u20ac"
   },
   {
     "vola_flight_departure_time": "20:40",
@@ -77,18 +70,11 @@
     "vola_flight_prices": "1789 \u20ac"
   },
   {
-    "vola_flight_departure_time": "22:00",
-    "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "13:35",
-    "vola_flight_prices": "2398 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "22:00",
-    "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "14:45",
-    "vola_flight_prices": "2332 \u20ac"
+    "vola_flight_departure_time": "16:10",
+    "vola_arrival_time": "08:55",
+    "vola_flight_arrival": "12:10",
+    "vola_arrival_departure_time": "00:05",
+    "vola_flight_prices": "1789 \u20ac"
   },
   {
     "vola_flight_departure_time": "08:35",
@@ -98,74 +84,18 @@
     "vola_flight_prices": "1795 \u20ac"
   },
   {
+    "vola_flight_departure_time": "08:35",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:05",
+    "vola_arrival_departure_time": "08:15",
+    "vola_flight_prices": "1805 \u20ac"
+  },
+  {
     "vola_flight_departure_time": "19:00",
     "vola_arrival_time": "08:50",
     "vola_flight_arrival": "12:10",
     "vola_arrival_departure_time": "00:05",
     "vola_flight_prices": "1822 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "09:35",
-    "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "14:30",
-    "vola_flight_prices": "1832 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "16:10",
-    "vola_arrival_time": "08:55",
-    "vola_flight_arrival": "12:10",
-    "vola_arrival_departure_time": "00:05",
-    "vola_flight_prices": "1789 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "08:25",
-    "vola_arrival_time": "17:25",
-    "vola_flight_arrival": "09:15",
-    "vola_arrival_departure_time": "22:50",
-    "vola_flight_prices": "2056 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "14:50",
-    "vola_arrival_time": "17:25",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "14:45",
-    "vola_flight_prices": "2250 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "14:50",
-    "vola_arrival_time": "17:25",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "13:35",
-    "vola_flight_prices": "2316 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "22:00",
-    "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "13:05",
-    "vola_flight_prices": "2686 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "08:25",
-    "vola_arrival_time": "08:20",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "13:35",
-    "vola_flight_prices": "2556 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "08:25",
-    "vola_arrival_time": "08:20",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "14:45",
-    "vola_flight_prices": "2490 \u20ac"
-  },
-  {
-    "vola_flight_departure_time": "19:00",
-    "vola_arrival_time": "08:50",
-    "vola_flight_arrival": "22:05",
-    "vola_arrival_departure_time": "08:15",
-    "vola_flight_prices": "2114 \u20ac"
   },
   {
     "vola_flight_departure_time": "13:15",
@@ -175,18 +105,32 @@
     "vola_flight_prices": "1822 \u20ac"
   },
   {
-    "vola_flight_departure_time": "15:50",
+    "vola_flight_departure_time": "08:35",
     "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "14:45",
-    "vola_flight_prices": "2332 \u20ac"
+    "vola_flight_arrival": "22:05",
+    "vola_arrival_departure_time": "14:30",
+    "vola_flight_prices": "1873 \u20ac"
   },
   {
-    "vola_flight_departure_time": "15:50",
-    "vola_arrival_time": "19:20",
-    "vola_flight_arrival": "22:30",
-    "vola_arrival_departure_time": "13:35",
-    "vola_flight_prices": "2398 \u20ac"
+    "vola_flight_departure_time": "08:25",
+    "vola_arrival_time": "17:25",
+    "vola_flight_arrival": "09:15",
+    "vola_arrival_departure_time": "22:50",
+    "vola_flight_prices": "2056 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "19:00",
+    "vola_arrival_time": "08:50",
+    "vola_flight_arrival": "22:05",
+    "vola_arrival_departure_time": "08:15",
+    "vola_flight_prices": "2116 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "14:50",
+    "vola_arrival_time": "17:25",
+    "vola_flight_arrival": "09:15",
+    "vola_arrival_departure_time": "22:50",
+    "vola_flight_prices": "2118 \u20ac"
   },
   {
     "vola_flight_departure_time": "19:40",
@@ -196,17 +140,73 @@
     "vola_flight_prices": "2138 \u20ac"
   },
   {
+    "vola_flight_departure_time": "22:00",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:30",
+    "vola_arrival_departure_time": "14:45",
+    "vola_flight_prices": "2257 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "15:50",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:30",
+    "vola_arrival_departure_time": "14:45",
+    "vola_flight_prices": "2257 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "14:50",
+    "vola_arrival_time": "17:25",
+    "vola_flight_arrival": "22:30",
+    "vola_arrival_departure_time": "14:45",
+    "vola_flight_prices": "2291 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "22:00",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:30",
+    "vola_arrival_departure_time": "13:35",
+    "vola_flight_prices": "2325 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "15:50",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:30",
+    "vola_arrival_departure_time": "13:35",
+    "vola_flight_prices": "2325 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "14:50",
+    "vola_arrival_time": "17:25",
+    "vola_flight_arrival": "22:30",
+    "vola_arrival_departure_time": "13:35",
+    "vola_flight_prices": "2359 \u20ac"
+  },
+  {
     "vola_flight_departure_time": "14:50",
     "vola_arrival_time": "17:25",
     "vola_flight_arrival": "22:05",
     "vola_arrival_departure_time": "14:30",
-    "vola_flight_prices": "2421 \u20ac"
+    "vola_flight_prices": "2455 \u20ac"
   },
   {
-    "vola_flight_departure_time": "19:00",
-    "vola_arrival_time": "08:50",
+    "vola_flight_departure_time": "08:25",
+    "vola_arrival_time": "08:20",
     "vola_flight_arrival": "22:30",
     "vola_arrival_departure_time": "14:45",
-    "vola_flight_prices": "1961 \u20ac"
+    "vola_flight_prices": "2490 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "08:25",
+    "vola_arrival_time": "08:20",
+    "vola_flight_arrival": "22:30",
+    "vola_arrival_departure_time": "13:35",
+    "vola_flight_prices": "2558 \u20ac"
+  },
+  {
+    "vola_flight_departure_time": "22:00",
+    "vola_arrival_time": "19:20",
+    "vola_flight_arrival": "22:05",
+    "vola_arrival_departure_time": "13:05",
+    "vola_flight_prices": "2611 \u20ac"
   }
 ]

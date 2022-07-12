@@ -35,10 +35,9 @@ def kayak_website():
             'kayak_return_arrival_time': return_arrival_time,
             'kayak_prices': flight_price
         })
+        data.sort(key=lambda x: x["kayak_prices"])
 
     driver.quit()
 
     with open('kayak_results.json', 'w') as json_file:
         json.dump(data, json_file, indent=2)
-
-kayak_website()
